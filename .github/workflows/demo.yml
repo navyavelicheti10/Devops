@@ -23,12 +23,12 @@ jobs:
       # Build image
       - name: Build Docker image
         run: |
-          docker build -t navyavelicheti10/cicd-demo:latest .
+          docker build -t navyav15/cicd-demo:latest .
 
       # Push image
       - name: Push Docker image
         run: |
-          docker push navyavelicheti10/cicd-demo:latest
+          docker push navyav15/cicd-demo:latest
 
       # Echo deployment instructions
       - name: Deployment notes
