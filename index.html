@@ -1,1 +1,243 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navya — AI/ML Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #120016;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
 
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: rgba(255, 255, 255, 0.06);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav a {
+      color: #ffc6ff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+      background: linear-gradient(160deg, #ff00d4, #b300ff 60%, #3e005f);
+    }
+
+    header h1 {
+      font-size: 54px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ff7cf8, #d084ff, #ffb9ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #ffe2ff;
+      max-width: 700px;
+    }
+
+    section {
+      padding: 90px 60px;
+    }
+
+    .title {
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 35px;
+      background: linear-gradient(90deg, #ff82ff, #d48bff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .about-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-box img {
+      width: 260px;
+      height: 260px;
+      border-radius: 20px;
+      object-fit: cover;
+      border: 4px solid #ff9dff;
+    }
+
+    .about-text {
+      max-width: 620px;
+      line-height: 1.8;
+      font-size: 18px;
+      color: #ffdfff;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #ffe4ff;
+    }
+
+    /* Experience */
+    .exp-card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .exp-card h3 {
+      margin: 0;
+      color: #ffb3ff;
+    }
+
+    .exp-card ul li {
+      color: #ffe6ff;
+      margin-bottom: 8px;
+    }
+
+    /* Projects */
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .project-card h3 {
+      margin: 0 0 10px;
+      color: #ffadff;
+    }
+    .project-card p {
+      color: #ffe6ff;
+    }
+    .project-card a {
+      color: #ffbaff;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #eabfff;
+      margin-top: 40px;
+    }
+  </style></head><body>
+  <nav>
+    <div style="font-weight:700; font-size:22px; color:#ffbaff">NAVYA</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>  <header>
+    <h1>Hello, I'm Navya ✨</h1>
+    <p>AI/ML Engineer • Data Scientist • ML Researcher — creating intelligent systems using Machine Learning, GANs, Diffusion Models & FastAPI automation.</p>
+  </header>  <section id="about">
+    <div class="title">About Me</div>
+    <div class="about-box">
+      <img src="https://via.placeholder.com/260" alt="profile image" />
+      <div class="about-text">
+        I am an AI & ML graduate with hands-on experience in Machine Learning, Data Analytics, API development, and predictive modelling. I’ve built solutions in image generation, fraud detection, customer analytics, and automation workflows during internships and projects.
+        <br><br>
+        I love transforming ideas into intelligent, efficient, real-world AI solutions.
+      </div>
+    </div>
+  </section>  <section id="skills">
+    <div class="title">Skills</div>
+    <div class="skills-grid">
+      <div class="skill">Python</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">CNN / GANs / Diffusion Models</div>
+      <div class="skill">FastAPI</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Data Cleaning & Preprocessing</div>
+      <div class="skill">Model Deployment</div>
+    </div>
+  </section>  <section id="experience">
+    <div class="title">Experience</div><div class="exp-card">
+  <h3>AI/ML & Data Science Intern — Trinetra Wireless Pvt Ltd</h3>
+  <p style="color:#ffcfff">May 2024 – Oct 2024 • On-site</p>
+  <ul>
+    <li>Built ML models for fleet management & predictive maintenance.</li>
+    <li>Deployed FastAPI services to automate operations.</li>
+    <li>Processed large-scale vehicle transaction logs improving accuracy.</li>
+  </ul>
+</div>
+
+<div class="exp-card">
+  <h3>Machine Learning Intern — CodSoft</h3>
+  <p style="color:#ffcfff">Feb 2024 – Mar 2024 • Remote</p>
+  <ul>
+    <li>Developed churn prediction & credit card fraud ML models.</li>
+    <li>Evaluated supervised ML algorithms on real datasets.</li>
+  </ul>
+</div>
+
+  </section>  <section id="projects">
+    <div class="title">Projects</div><div class="project-card">
+  <h3>Hybrid Text-to-Image Model (GAN + Diffusion)</h3>
+  <p>Developed a hybrid generative pipeline integrating Stable Diffusion with Real-ESRGAN for high-quality image enhancement.</p>
+  <a href="#">View Project →</a>
+</div>
+
+<div class="project-card">
+  <h3>Credit Card Fraud Detection</h3>
+  <p>Implemented ML models to detect fraudulent credit card transactions using supervised learning techniques.</p>
+  <a href="#">View Project →</a>
+</div>
+
+<div class="project-card">
+  <h3>Python Voice Assistant — Elena</h3>
+  <p>A mini AI assistant capable of playing YouTube content, fetching news, performing searches and more.</p>
+  <a href="#">View Project →</a>
+</div>
+
+  </section>  <section id="contact">
+    <div class="title">Contact</div>
+    <p>Email: <strong>vnavyasri10@gmail.com</strong></p>
+    <p>Phone: <strong>+91 63047 56621</strong></p>
+    <p>LinkedIn | GitHub</p>
+  </section>  <footer>© 2025 Navya — Portfolio Website</footer>
+</body>
+</html>
